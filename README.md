@@ -1,35 +1,168 @@
-Instructions for this assignment are as follows -
+#Auto Accident Analysis
 
-In the Auto Accident Dataset Microsoft® Excel® spreadsheet, clean and prepare the data from the Auto Accident Dataset and:
+![Dashboard Preview](<img width="1249" height="999" alt="Auto Accident Dataset January 2020" src="https://github.com/user-attachments/assets/f5b493d1-1d71-4913-a49e-9830886ed21d" />
+)
 
-Check for and remove duplicate records.
+##Overview
 
-Convert column A: CASENUM to an integer value.
+Analyze nationwide automobile accident data to identify trends in injuries, alcohol involvement, weather conditions, and regional differences. The project combines Python, Tableau, and statistical analysis to uncover patterns that may help improve roadway safety and inform decision-making.
 
-Enumerate column G: URBANICITYNAME and place a 1 in column F: URBANICITY if column G is urban area and place a 2 in column F if column G contains rural area.
 
-Create a frequency chart and a PivotTable using your cleaned and prepared auto accident data. Use the following requirements:
+##Project Objectives
+Clean and prepare accident data for analysis
+Explore injury trends across U.S. regions
+Evaluate the impact of alcohol involvement
+Identify environmental factors contributing to accidents
+Create interactive Tableau dashboards
+Communicate findings through data storytelling
 
-Frequency chart: Show the total number of auto accidents in rural and urban areas using data from column G: URBANICITYNAME, total number of auto accidents that occur by day of the week using data from column N: DAY_WEEKNAME, and total auto accidents by weather conditions using column AG: WEATHR_IMNAME.
 
-PivotTable: Using Excel, create a PivotTable in a new tab that includes the following information from the auto accident data: region (column D: REGION), month (column J: MONTH), harm (column T: HARM_EVNAME), weather conditions (column X: LGT_CONDNAME), weather type (column AB: WEATHERNAME), and lighting (column AF: LGTCON_IMNAME).
+##Dataset
 
-Step 1: Cleaned the dataset following the instructions.
+Source: ## Dataset
 
-        1) Converted CASENUM column to number, removed decimal point.
-        
-        2) Used "IF" formula to enumerate URBANICITY column based on whether URBANICITYNAME column showed rural or urban.
-        
-Step 2: Followed instructions to create Frequency Chart in Excel
+The dataset used in this project was provided as a course resource for academic purposes. The original source was not identified in the course materials.
 
-        1) Quickly observed there are more accidents in urban areas than rural areas.
-        
-        2) Quickly observed the two days of the week with the highest amount of accidents are Thursday and Friday in both rural and Urban areas, and the day with the least amount of accidents is Sunday.
-        
-Step 3: Followed instructions to create PivotTable in Excel
+A copy of the dataset used for this analysis is included in this repository (`im310_v4_wk2_auto_accident_dataset.analysis.csv`).
 
-        1) Observed that most of the data is from the month of January, 2020. There is 1 record from August, 2020.
-        
-Step 4: Converted .xlsx file to .csv
+> **Note:** This project was completed as part of a university data analytics course. The analysis, data cleaning, statistical evaluation, and visualizations are my own work.
 
-Step 5: Loaded .csv file into python for exploratory data anlaysis
+The dataset contains records of motor vehicle accidents, including variables such as:
+
+State
+Region
+Number of Injuries
+Alcohol Involvement
+Weather Conditions
+Light Conditions
+Urban/Rural Classification
+Technologies Used
+Tool	Purpose
+Python	Data cleaning and statistical analysis
+Pandas	Data manipulation
+NumPy	Numerical calculations
+Matplotlib	Visualizations
+Tableau Public	Interactive dashboards
+Excel	Initial data preparation
+
+##Data Cleaning
+
+Several preprocessing steps were performed before analysis:
+
+Removed invalid injury codes (98 and 99)
+Corrected duplicate weather condition columns
+Enumerated coded categorical variables
+Filtered unknown alcohol values when appropriate
+Checked for missing values and outliers
+Standardized regional classifications
+
+
+##Exploratory Data Analysis
+
+The analysis examined:
+
+Total accidents by region
+Injury rates
+Alcohol-related crashes
+Urban vs. Rural accidents
+Weather conditions
+Injury severity distributions
+Regional comparisons
+
+
+##Statistical Analysis
+
+Descriptive statistics included:
+
+Mean
+Median
+Standard Deviation
+Quartiles
+Range
+
+
+##Outlier detection
+
+Python was used to calculate summary statistics and compare alcohol-related accidents against non-alcohol-related accidents.
+
+
+##Tableau Dashboard
+
+The interactive dashboard includes:
+
+Regional accident map
+Injury totals
+Alcohol involvement
+Injury percentages
+Weather conditions
+Filters for deeper exploration
+
+([Tableau Dashboard](https://public.tableau.com/app/profile/tim.manuel/viz/AutoAccidentDatasetDashboard/AutoAccidentDataset))
+
+
+##Key Findings
+
+Some notable insights include:
+
+Alcohol-related crashes resulted in significantly more injuries on average than non-alcohol-related crashes.
+Urban areas experienced a higher average number of injuries than rural areas.
+Nearly half of crashes in the Southern region resulted in injuries.
+Unknown and missing categorical values required careful handling before analysis.
+Weather conditions influenced accident frequency but had less impact than alcohol involvement on injury severity.
+
+
+##Repository Structure
+Auto-Accident-Analysis/
+│
+├── data/
+│   ├── raw/
+│   └── cleaned/
+│
+├── notebooks/
+│   ├── Data_Cleaning.ipynb
+│   └── Analysis.ipynb
+│
+├── dashboard/
+│   └── Tableau_Dashboard.twbx
+│
+├── images/
+│   ├── dashboard.png
+│   └── charts/
+│
+├── report/
+│   └── Data_Model_Analysis.pdf
+│
+├── requirements.txt
+├── README.md
+└── LICENSE
+
+
+##Skills Demonstrated:
+
+Data Cleaning
+Exploratory Data Analysis (EDA)
+Data Visualization
+Statistical Analysis
+Tableau Dashboard Design
+Python Programming
+Data Storytelling
+Business Intelligence
+Future Improvements
+
+
+##Potential enhancements include:
+
+Predictive modeling using machine learning
+Geographic hotspot analysis
+Time-series accident forecasting
+Interactive web dashboard
+Additional demographic analysis
+
+
+#Author
+
+Tim Manuel
+
+Data Analytics and Data Science Portfolio
+([Github](https://github.com/HalfwayBubble76))
+([LinkedIn](https://www.linkedin.com/in/timothy-manuel-a70112149/))
