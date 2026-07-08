@@ -1,23 +1,22 @@
-#Auto Accident Analysis
+# Auto Accident Analysis
 
-![Dashboard Preview](<img width="1249" height="999" alt="Auto Accident Dataset January 2020" src="https://github.com/user-attachments/assets/f5b493d1-1d71-4913-a49e-9830886ed21d" />
-)
+![Dashboard Preview](Auto Accident Dataset January 2020.png)
 
-##Overview
+## Overview
 
 Analyze nationwide automobile accident data to identify trends in injuries, alcohol involvement, weather conditions, and regional differences. The project combines Python, Tableau, and statistical analysis to uncover patterns that may help improve roadway safety and inform decision-making.
 
 
-##Project Objectives
-Clean and prepare accident data for analysis
-Explore injury trends across U.S. regions
-Evaluate the impact of alcohol involvement
-Identify environmental factors contributing to accidents
-Create interactive Tableau dashboards
-Communicate findings through data storytelling
+## Project Objectives
+- Clean and prepare accident data for analysis
+- Explore injury trends across U.S. regions
+- Evaluate the impact of alcohol involvement
+- Identify environmental factors contributing to accidents
+- Create interactive Tableau dashboards
+- Communicate findings through data storytelling
 
 
-##Dataset
+## Dataset
 
 Source: ## Dataset
 
@@ -29,89 +28,90 @@ A copy of the dataset used for this analysis is included in this repository (`im
 
 The dataset contains records of motor vehicle accidents, including variables such as:
 
-State
-Region
-Number of Injuries
-Alcohol Involvement
-Weather Conditions
-Light Conditions
-Urban/Rural Classification
-Technologies Used
-Tool	Purpose
-Python	Data cleaning and statistical analysis
-Pandas	Data manipulation
-NumPy	Numerical calculations
-Matplotlib	Visualizations
-Tableau Public	Interactive dashboards
-Excel	Initial data preparation
+- State
+- Region
+- Number of Injuries
+- Alcohol Involvement
+- Weather Conditions
+- Light Conditions
+- Urban/Rural Classification
 
-##Data Cleaning
+## Technologies Used
+### Tool  ->	Purpose
+- Python  ->  Data cleaning and statistical analysis
+- Pandas  ->  Data manipulation
+- NumPy  ->  Numerical calculations
+- Matplotlib  ->  Visualizations
+- Tableau Public  ->  Interactive dashboards
+- Excel  ->  Initial data preparation
+
+## Data Cleaning
 
 Several preprocessing steps were performed before analysis:
 
-Removed invalid injury codes (98 and 99)
-Corrected duplicate weather condition columns
-Enumerated coded categorical variables
-Filtered unknown alcohol values when appropriate
-Checked for missing values and outliers
-Standardized regional classifications
+- Removed invalid injury codes (98 and 99)
+- Corrected duplicate weather condition columns
+- Enumerated coded categorical variables
+- Filtered unknown alcohol values when appropriate
+- Checked for missing values and outliers
+- Standardized regional classifications
 
 
-##Exploratory Data Analysis
+## Exploratory Data Analysis
 
 The analysis examined:
 
-Total accidents by region
-Injury rates
-Alcohol-related crashes
-Urban vs. Rural accidents
-Weather conditions
-Injury severity distributions
-Regional comparisons
+- Total accidents by region
+- Injury rates
+- Alcohol-related crashes
+- Urban vs. Rural accidents
+- Weather conditions
+- Injury severity distributions
+- Regional comparisons
 
 
-##Statistical Analysis
+## Statistical Analysis
 
 Descriptive statistics included:
 
-Mean
-Median
-Standard Deviation
-Quartiles
-Range
+- Mean
+- Median
+- Standard Deviation
+- Quartiles
+- Range
 
 
-##Outlier detection
+## Outlier detection
 
 Python was used to calculate summary statistics and compare alcohol-related accidents against non-alcohol-related accidents.
 
 
-##Tableau Dashboard
+## Tableau Dashboard
 
 The interactive dashboard includes:
 
-Regional accident map
-Injury totals
-Alcohol involvement
-Injury percentages
-Weather conditions
-Filters for deeper exploration
+- Regional accident map
+- Injury totals
+- Alcohol involvement
+- Injury percentages
+- Weather conditions
+- Filters for deeper exploration
 
 ([Tableau Dashboard](https://public.tableau.com/app/profile/tim.manuel/viz/AutoAccidentDatasetDashboard/AutoAccidentDataset))
 
 
-##Key Findings
+## Key Findings
 
 Some notable insights include:
 
-Alcohol-related crashes resulted in significantly more injuries on average than non-alcohol-related crashes.
-Urban areas experienced a higher average number of injuries than rural areas.
-Nearly half of crashes in the Southern region resulted in injuries.
-Unknown and missing categorical values required careful handling before analysis.
-Weather conditions influenced accident frequency but had less impact than alcohol involvement on injury severity.
+- Alcohol-related crashes resulted in significantly more injuries on average than non-alcohol-related crashes.
+- Urban areas experienced a higher average number of injuries than rural areas.
+- Nearly half of crashes in the Southern region resulted in injuries.
+- Unknown and missing categorical values required careful handling before analysis.
+- Weather conditions influenced accident frequency but had less impact than alcohol involvement on injury severity.
 
 
-##Repository Structure
+## Repository Structure
 Auto-Accident-Analysis/
 │
 ├── data/
@@ -137,31 +137,31 @@ Auto-Accident-Analysis/
 └── LICENSE
 
 
-##Skills Demonstrated:
+## Skills Demonstrated:
 
-Data Cleaning
-Exploratory Data Analysis (EDA)
-Data Visualization
-Statistical Analysis
-Tableau Dashboard Design
-Python Programming
-Data Storytelling
-Business Intelligence
-Future Improvements
-
-
-##Potential enhancements include:
-
-Predictive modeling using machine learning
-Geographic hotspot analysis
-Time-series accident forecasting
-Interactive web dashboard
-Additional demographic analysis
+- Data Cleaning
+- Exploratory Data Analysis (EDA)
+- Data Visualization
+- Statistical Analysis
+- Tableau Dashboard Design
+- Python Programming
+- Data Storytelling
+- Business Intelligence
+- Future Improvements
 
 
-#Author
+## Potential enhancements include:
 
-Tim Manuel
+- Predictive modeling using machine learning
+- Geographic hotspot analysis
+- Time-series accident forecasting
+- Interactive web dashboard
+- Additional demographic analysis
+
+
+# Author
+
+## Tim Manuel
 
 Data Analytics and Data Science Portfolio
 ([Github](https://github.com/HalfwayBubble76))
