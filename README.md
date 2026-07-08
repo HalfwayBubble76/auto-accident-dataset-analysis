@@ -1,6 +1,6 @@
 # Auto Accident Analysis
 
-![Dashboard Preview](Auto%20Accident%20Dataset%20January%202020.png)
+![Dashboard Preview](dashboard-overview.png)
 
 ## Overview
 
